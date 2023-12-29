@@ -3,12 +3,17 @@ import { Text, StyleSheet, View, Button, TouchableOpacity } from "react-native";
 
 const HomeScreen = () => {
   return <View>
+    
     <Text style={styles.text}>Vivek Anand</Text>
     <Button 
     onPress={()=>console.log('Button Pressed')}
     title="Go to components Demo"/>
 
-    <TouchableOpacity></TouchableOpacity>
+    <TouchableOpacity
+    onPress={()=>console.log('List Pressed')}>
+      <Text>Go To List Demo</Text>
+    </TouchableOpacity>
+
     </View>
 };
 
